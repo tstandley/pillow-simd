@@ -106,6 +106,11 @@ The easiest way to do so is to define the `CC` variable during the compilation.
 $ pip uninstall pillow
 $ CC="cc -mavx2" pip install -U --force-reinstall pillow-simd
 ```
+or for the AVX512-enabled version:
+```
+$ pip uninstall pillow
+CC="cc -mavx512" pip install -U --force-reinstall pillow-simd
+```
 
 
 ## Contributing to Pillow-SIMD
